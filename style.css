@@ -276,10 +276,9 @@ font-weight: 500;
 }
 /*Section blog -----------------------------------------------------------*/
 /* Section del Contact---------------------------------------------*/
-.contact {
-    background: #777;
+.contact{
+    background: #2c2f48;
 }
-
 
 .contact-container{
     max-width: 960px;
