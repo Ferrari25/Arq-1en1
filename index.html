@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header>
@@ -171,41 +172,19 @@
             </div>
         </div>
     </section>
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="hearder Text text-center">
-                        <h2>Contact Us</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit natus nam, dolores commodi, eaque possimus aspernatur inventore hic quibusdam quis cupiditate</p>
-                    </div>
-                </div>
+    <section>
+        <div class="contact-container">
+            <div class="form-container">
+                <h3>Contactanos</h3>
+                <form action="" class="contact-fomr">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" name="" id="" placeholder="Email: " required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensage"></textarea>
+                    <input type="submit" value="Send" class="send-buttom">
+                </form>
             </div>
-            <div class="row-clearfix">
-                <div class="offset-sm-2 col-sm-8">
-                    <form>
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" name="" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="text" name="" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Phone</label>
-                            <input type="text" name="" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Message</label>
-                            <textarea class="form-control textarea" name=""></textarea>
-                        </div>
-                        <div class="form-group text-center">
-                            <button class="btn btnD1">Send</button>
-                        </div>
-                    </form>
-
-                </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.84077571148552!2d-58.79334183034584!3d-34.34610827098924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb61e96bef78d9%3A0xb2580ea8d69882e2!2sArquitectura%201en1!5e0!3m2!1ses-419!2sar!4v1664798186745!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -228,6 +207,8 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e8d1bedab0.js" crossorigin="anonymous"></script>
+    <script src="iniciarmapa.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
 
     <script type="text/javascript">
         $(document).scroll(function(){

@@ -16,9 +16,7 @@ p
 {
     font-size: 1.15rem;
 }
-
-
-
+/* Section Nav Bar ----------------------------------------------*/
 .navbar
 {   
     background: transparent !important;
@@ -62,7 +60,8 @@ p
     font-size: 2rem;
     font-weight: 400;
 }
-
+/* Section Nav Bar ----------------------------------------------*/
+/* Section Banner ----------------------------------------------*/
 .banner
 {
     position: relative;
@@ -76,9 +75,7 @@ p
 }
 
 .banner:before,
-.sec2:before,
-.contact
-{
+.sec2:before{
     content: '';
     position: absolute;
     top: 0;
@@ -90,9 +87,7 @@ p
 }
 
 .banner:after,
-.sec2::after,
-.contact
-{
+.sec2::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -102,6 +97,9 @@ p
     background: linear-gradient(360deg,#252424,transparent);
     pointer-events: none;
 }
+
+/* Section Banner ----------------------------------------------*/
+
 
 .height100p
 {
@@ -139,7 +137,7 @@ height: 100vh;
     font-size: 1.3rem;
 
 }
-
+/*Section 1 -----------------------------------------------------------*/
 .sec1
 {
     padding: 40px 0;
@@ -216,6 +214,8 @@ font-size: 16px;
 font-weight: 500;
 
 }
+/*Section 1 -----------------------------------------------------------*/
+/*Section 2 -----------------------------------------------------------*/
 
 .sec2
 {
@@ -233,6 +233,8 @@ font-weight: 500;
     margin-bottom: 20px;
     
 }
+/*Section 2 -----------------------------------------------------------*/
+/*Section blog -----------------------------------------------------------*/
 
 .blog
 {
@@ -272,54 +274,80 @@ font-weight: 500;
     padding: 0 0 0px;
     font-weight: 600;
 }
-
-.contact
-{
-    position: relative;
-    padding: 100px 0;
-    background: url(https://thumbs.dreamstime.com/b/iconos-del-contacto-y-de-la-comunicaci%C3%B3n-en-fondo-gris-123938823.jpg);
-    background-size: cover;
-    min-height: 100vh;
+/*Section blog -----------------------------------------------------------*/
+/* Section del Contact---------------------------------------------*/
+.contact {
+    background: #777;
 }
 
-.contact form
-{
-    z-index: 1000;
-    position: relative
-    ;
+
+.contact-container{
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 1.5rem;
+    background: #363953 ;
+    box-shadow: 0 0 1rem hsla(0 0 0 /16%);
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
-.contact .form-control
-{
-    background: transparent;
+.form-container{
+    padding: 20px;
+}
+
+.form-container h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem;
+}
+
+.contact-form{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
     border: none;
-    border-bottom: 2px solid rgba(225,225,225,.8);
-    height: 50px;
-    border-radius: 0;
-    background: rgba(0,0,0,.6);
+    outline: none;
+    background: #2c2f48;
+    padding: 10px;
+    font-size: 0.9rem;
     color: #fff;
-    font-size: 1.25rem;
-
+    border-radius: 0.4rem;
 }
 
-.contact .form-control:focus,
-.contact .form-control:hover
-{
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.contact-form .send-buttom{
     border: none;
-    border-bottom: 2px solid rgba(225,225,225,.8);
-    box-shadow: none;
+    outline: none;
+    background: #00dbde;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.contact .textarea
-{
-    min-height: 100px;
+.contact-form .send-buttom :hover{
+    background: hsl(181, 100%, 44% , 0.8);
+    transition: 0.3s all linear;
+}
+/* Section del Contact-------------------------------------------*/
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+
 }
 
-.contact label
-{
-    color: #fff;
-    font-size: 1.25rem;
-}
+/* Section del footer-------------------------------------------*/
 
 footer
 {
@@ -355,3 +383,4 @@ footer
 {
     color:#fff;
 }
+/* Section del footer-------------------------------------------*/
